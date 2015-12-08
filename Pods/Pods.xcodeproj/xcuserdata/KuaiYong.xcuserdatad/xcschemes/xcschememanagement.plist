@@ -3,8 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>Pod.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>6262F4A21C16CEF300C70DCD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6262F4AF1C16CF8100C70DCD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -6,16 +6,49 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6262F4B31C16CF8100C70DCD /* Pods.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6262F4B21C16CF8100C70DCD /* Pods.h */; };
+		6262F4B51C16CF8100C70DCD /* Pods.m in Sources */ = {isa = PBXBuildFile; fileRef = 6262F4B41C16CF8100C70DCD /* Pods.m */; };
+		6262F4BB1C16CFA600C70DCD /* DCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6262F4BA1C16CFA600C70DCD /* DCButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6262F4AE1C16CF8100C70DCD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				6262F4B31C16CF8100C70DCD /* Pods.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6262F49D1C16C7C800C70DCD /* DCButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCButton.h; sourceTree = "<group>"; };
-		6262F49E1C16C7C800C70DCD /* DCButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCButton.m; sourceTree = "<group>"; };
+		6262F4B01C16CF8100C70DCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6262F4B21C16CF8100C70DCD /* Pods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pods.h; sourceTree = "<group>"; };
+		6262F4B41C16CF8100C70DCD /* Pods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pods.m; sourceTree = "<group>"; };
+		6262F4B91C16CFA600C70DCD /* DCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCButton.h; sourceTree = "<group>"; };
+		6262F4BA1C16CFA600C70DCD /* DCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCButton.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6262F4AD1C16CF8100C70DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6262F4B01C16CF8100C70DCD /* libPods.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -27,20 +60,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6262F49C1C16C7C800C70DCD /* Pod */ = {
+		6262F4B11C16CF8100C70DCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6262F49D1C16C7C800C70DCD /* DCButton.h */,
-				6262F49E1C16C7C800C70DCD /* DCButton.m */,
+				6262F4B91C16CFA600C70DCD /* DCButton.h */,
+				6262F4BA1C16CFA600C70DCD /* DCButton.m */,
+				6262F4B21C16CF8100C70DCD /* Pods.h */,
+				6262F4B41C16CF8100C70DCD /* Pods.m */,
 			);
-			path = Pod;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				6262F49C1C16C7C800C70DCD /* Pod */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				6262F4B11C16CF8100C70DCD /* Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				09C5E90726D2521A760312DBF50D9358 /* Products */,
 				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
@@ -56,12 +91,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		6262F4AF1C16CF8100C70DCD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6262F4B61C16CF8100C70DCD /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				6262F4AC1C16CF8100C70DCD /* Sources */,
+				6262F4AD1C16CF8100C70DCD /* Frameworks */,
+				6262F4AE1C16CF8100C70DCD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 6262F4B01C16CF8100C70DCD /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					6262F4AF1C16CF8100C70DCD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -75,9 +135,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6262F4AF1C16CF8100C70DCD /* Pods */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6262F4AC1C16CF8100C70DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6262F4BB1C16CFA600C70DCD /* DCButton.m in Sources */,
+				6262F4B51C16CF8100C70DCD /* Pods.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		052A17875CB827423D627183396CEB60 /* Release */ = {
@@ -111,6 +184,48 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6262F4B71C16CF8100C70DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6262F4B81C16CF8100C70DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -164,6 +279,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6262F4B61C16CF8100C70DCD /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6262F4B71C16CF8100C70DCD /* Debug */,
+				6262F4B81C16CF8100C70DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
