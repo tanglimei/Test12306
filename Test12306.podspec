@@ -10,6 +10,5 @@ Pod::Spec.new do |s|
   s.author       = { "tanglimei" => "562630424@qq.com" }
   s.source       = { :git => "https://github.com/tanglimei/Test12306.git", :tag => "0.0.3" }
   s.source_files  = "Pod/*.{h,m}"
-  s.framework = 'UIKit'
 
 end
