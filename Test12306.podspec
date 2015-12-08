@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
                     wonderful one test  longlonglong  First one Test12306.
                    DESC
   s.homepage     = "https://github.com/tanglimei/Test12306"
-  s.license      = "MIT"
-  s.author             = { "tanglimei" => "562630424@qq.com" }
+  s.license      = 'MIT'
+  s.author       = { "tanglimei" => "562630424@qq.com" }
   s.source       = { :git => "https://github.com/tanglimei/Test12306.git", :tag => "0.0.1" }
-  s.source_files  = "Pods/*.{h,m}"
+  s.source_files  = "Pod/*.{h,m}"
 
 end
